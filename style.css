@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace ;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:#C3E0E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./bubbles-2595227_1920.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#panel{
+    height: 85%;
+    width: 85%;
+    background-color:#D4F1F4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#ptop{
+    height: 100px;
+    width: 100%;
+    padding: 0 20%;
+    background-color: #055772;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.elem h2{
+    font-size: 22px;
+    font-weight: 400;
+}
+.box{
+    background-color: #D4F1F4;
+    color: #055772;
+    padding: 5px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    position: relative;
+}
+
+#pbottom{
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bubble{
+    background-color: #055772;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: #055772;
+}
+
+button{
+    position: absolute;
+    right: 12%;
+    top: 12%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #055772;
+}
+button:hover{
+    transform: scale(1.08);
+}
